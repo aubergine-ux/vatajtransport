@@ -166,7 +166,7 @@
       <div class="wrap">
         <h2>How it goes</h2>
         <ol class="how-list">
-          <li><b>You tell us what and where.</b> Fill out the form below or just call.</li>
+          <li><b>You tell us what and where.</b> Call or email with the details.</li>
           <li><b>We give you a price</b> and a pickup window. If it works for you, you’re on the schedule.</li>
           <li><b>We pick it up and drop it off.</b> Load it, haul it, hand over the keys.</li>
         </ol>
@@ -200,57 +200,34 @@
       </div>
     </section>
 
-    <!-- QUOTE FORM: laid out like a bill of lading -->
+    <!-- QUOTE: contact by phone or email -->
     <section class="quote" id="quote">
-      <div class="wrap">
-        <h2>Get a quote</h2>
-        <p class="quote-sub">Fill this out and we’ll get back to you with a price. Rather talk? Call <a href="tel:+19144629633">(914) 462-9633</a> or email <a href="mailto:vatajxf@mailbox.org">vatajxf@mailbox.org</a>.</p>
-
-        <!-- TODO: replace [FORMSPREE_FORM_ID] with your form ID from formspree.io (looks like "xyzabcd") -->
-        <form class="bol" id="quote-form" action="https://formspree.io/f/[FORMSPREE_FORM_ID]" method="POST">
-          <input type="hidden" name="_subject" value="New quote request: Vataj Transport">
-          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-          <div class="bol-head">
-            <span>Quote request</span>
-            <span>Vataj Transport LLC</span>
+      <div class="wrap quote-inner">
+        <div>
+          <h2>Get a quote</h2>
+          <p class="quote-sub">Call or email and we’ll get you a price.</p>
+          <div class="contact">
+            <a class="contact-btn" href="tel:+19144629633">
+              <small>Call</small>
+              <span>(914) 462-9633</span>
+            </a>
+            <a class="contact-btn contact-btn--light" href="mailto:vatajxf@mailbox.org?subject=Quote%20request&amp;body=Hi%20Ruby%2C%20I%27d%20like%20a%20quote.%0D%0A%0D%0AName%3A%0D%0APhone%3A%0D%0APickup%20ZIP%3A%0D%0ADelivery%20ZIP%3A%0D%0AVehicle%20%28year%2C%20make%2C%20model%29%3A%0D%0ADoes%20it%20run%3F%3A%0D%0APickup%20date%3A%0D%0A">
+              <small>Email</small>
+              <span>vatajxf@mailbox.org</span>
+            </a>
           </div>
+        </div>
 
-          <div class="bol-section">Customer</div>
-          <div class="bol-row">
-            <div class="cell cell--wide"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
-          </div>
-          <div class="bol-row">
-            <div class="cell"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
-            <div class="cell"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-          </div>
-
-          <div class="bol-section">Route</div>
-          <div class="bol-row">
-            <div class="cell"><label for="pickup_zip">Pickup ZIP</label><input id="pickup_zip" name="pickup_zip" type="text" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" autocomplete="off" required></div>
-            <div class="cell"><label for="delivery_zip">Delivery ZIP</label><input id="delivery_zip" name="delivery_zip" type="text" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" autocomplete="off" required></div>
-            <div class="cell"><label for="preferred_date">Pickup date</label><input id="preferred_date" name="preferred_date" type="date" required></div>
-          </div>
-
-          <div class="bol-section">Vehicle</div>
-          <div class="bol-row">
-            <div class="cell cell--year"><label for="vehicle_year">Year</label><input id="vehicle_year" name="vehicle_year" type="text" inputmode="numeric" pattern="(19|20)[0-9]{2}" maxlength="4" required></div>
-            <div class="cell"><label for="vehicle_make">Make</label><input id="vehicle_make" name="vehicle_make" type="text" required></div>
-            <div class="cell"><label for="vehicle_model">Model</label><input id="vehicle_model" name="vehicle_model" type="text" required></div>
-            <fieldset class="cell cell--runs">
-              <legend>Runs?</legend>
-              <div class="runs">
-                <label><input type="radio" name="running" value="Yes" required> Yes</label>
-                <label><input type="radio" name="running" value="No"> No</label>
-              </div>
-            </fieldset>
-          </div>
-
-          <div class="bol-foot">
-            <button class="btn" type="submit">Send it</button>
-            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-          </div>
-        </form>
+        <div class="bol">
+          <div class="bol-head"><span>Have this handy</span></div>
+          <ul class="bol-list">
+            <li><b>Pickup ZIP</b> where the car is now</li>
+            <li><b>Delivery ZIP</b> where it’s going</li>
+            <li><b>Vehicle</b> year, make and model</li>
+            <li><b>Does it run?</b> yes or no</li>
+            <li><b>Pickup date</b> when you need it moved</li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
