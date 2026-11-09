@@ -107,10 +107,18 @@
       <!-- Car hauler drawing -->
       <div class="road">
         <svg class="hauler" viewBox="0 96 890 119" role="img" aria-label="Drawing of a pickup truck towing a gooseneck trailer with two cars">
+          <!-- trailer tandem axles, toward the rear, tucked under the frame -->
           <g fill="#12223D">
-            <!-- trailer: deck, gooseneck, hitch -->
-            <rect x="20" y="166" width="480" height="13" rx="2"/>
-            <path d="M488 166 L522 124 H658 V135 H529 L500 179 H488 Z"/>
+            <circle cx="112" cy="192" r="16"/><circle cx="150" cy="192" r="16"/>
+          </g>
+          <g fill="#fff">
+            <circle cx="112" cy="192" r="5.5"/><circle cx="150" cy="192" r="5.5"/>
+          </g>
+          <g fill="#12223D">
+            <!-- trailer: deck, frame rail, gooseneck, hitch -->
+            <rect x="20" y="166" width="484" height="11" rx="2"/>
+            <rect x="30" y="175" width="476" height="7"/>
+            <path d="M490 166 L522 124 H658 V135 H529 L503 182 H490 Z"/>
             <rect x="642" y="133" width="10" height="11"/>
             <!-- pickup -->
             <path d="M590 140 H702 V122 Q702 112 712 112 H768 Q776 112 781 118 L806 146 L856 150 Q872 152 872 166 V186 H590 Z"/>
@@ -124,11 +132,9 @@
           </g>
           <!-- wheels -->
           <g fill="#12223D" stroke="#fff" stroke-width="5">
-            <circle cx="350" cy="192" r="16"/><circle cx="388" cy="192" r="16"/>
             <circle cx="632" cy="188" r="20"/><circle cx="826" cy="188" r="20"/>
           </g>
           <g fill="#fff">
-            <circle cx="350" cy="192" r="5.5"/><circle cx="388" cy="192" r="5.5"/>
             <circle cx="632" cy="188" r="7"/><circle cx="826" cy="188" r="7"/>
           </g>
           <!-- cars -->
@@ -153,7 +159,19 @@
           </li>
           <li>
             <strong>Where I go</strong>
-            <span>Mostly Putnam, Westchester, Dutchess, Orange and Rockland counties, plus the rest of the Hudson Valley and up into the Adirondacks. I also take trips elsewhere in New York and the Northeast, so ask if you don’t see your area.</span>
+            <span>Mostly around here:</span>
+            <ul class="areas">
+              <li>Putnam County</li>
+              <li>Westchester County</li>
+              <li>Dutchess County</li>
+              <li>Orange County</li>
+              <li>Rockland County</li>
+            </ul>
+            <ul class="areas">
+              <li>Hudson Valley</li>
+              <li>Adirondacks</li>
+            </ul>
+            <span>I also take trips elsewhere in New York and the Northeast, so ask if you don’t see your area.</span>
           </li>
         </ul>
         <p class="soon">Open Carrier for now. Enclosed Trailer Coming Soon</p>
