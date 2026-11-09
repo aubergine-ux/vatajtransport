@@ -74,7 +74,7 @@ h2 { font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 28px; }
 .hauler { display: block; width: 100%; max-width: 900px; height: auto; margin: 0 auto; }
 
 /* Services */
-.services { padding: 64px 0 56px; }
+.services { padding: 64px 0 56px; background: var(--paper); }
 .haul-list { list-style: none; margin: 0; padding: 0; }
 .haul-list li { position: relative; padding: 0 0 26px 52px; }
 .haul-list li::before { /* three wing bars from the logo */
@@ -104,18 +104,18 @@ h2 { font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 28px; }
 .how-list b { font-weight: 800; }
 
 /* About */
-.about { padding: 72px 0 40px; }
+.about { padding: 72px 0; color: var(--white); background: var(--navy); }
 .about-inner { display: grid; gap: 28px; align-items: center; }
-.about p { color: var(--ink-soft); max-width: 34em; }
-.about a { color: var(--navy); font-weight: 700; }
-.about .sign { margin-top: 20px; color: var(--navy); font-weight: 700; }
+.about p { color: rgba(255, 255, 255, .82); max-width: 34em; }
+.about a { color: var(--white); font-weight: 700; }
+.about .sign { margin-top: 20px; color: var(--white); font-weight: 700; }
 .about h2 { font-size: clamp(1.8rem, 5vw, 2.5rem); margin-bottom: 18px; }
-.photo-slot { display: grid; place-items: center; aspect-ratio: 4 / 3; background: var(--navy); border-radius: 3px; }
+.photo-slot { display: grid; place-items: center; aspect-ratio: 4 / 3; background: var(--white); border-radius: 3px; }
 .photo-slot img { width: 46%; }
 .about-photo { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px; }
 
 /* Trust: door lettering */
-.trust { padding: 40px 0 72px; }
+.trust { padding: 72px 0; }
 .door {
   display: flex; flex-direction: column; align-items: center; gap: 14px;
   padding: 36px 20px 30px; margin-bottom: 28px;
@@ -128,7 +128,7 @@ h2 { font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 28px; }
 .trust-text a { color: var(--navy); font-weight: 700; }
 
 /* Quote: bill of lading */
-.quote { padding: 64px 0 80px; background: var(--paper); border-top: 3px solid var(--navy); }
+.quote { padding: 64px 0 80px; background: var(--paper); }
 .quote-sub { color: var(--ink-soft); margin-top: -12px; margin-bottom: 28px; max-width: 36em; }
 .quote-sub a { color: var(--navy); font-weight: 700; }
 
@@ -192,7 +192,7 @@ h2 { font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 28px; }
   .hero { padding-top: 72px; }
   .stamp { display: flex; right: 32px; top: 10px; }
   .hero h1, .hero-sub { max-width: calc(100% - 220px); }
-  .services, .how { padding: 96px 0; }
+  .services, .how, .about, .trust { padding: 96px 0; }
   .how-list { grid-template-columns: repeat(3, 1fr); gap: 40px; }
   .about-inner { grid-template-columns: 1fr 1.1fr; gap: 56px; }
   .foot-inner { grid-template-columns: auto 1fr auto; align-items: center; gap: 40px; }

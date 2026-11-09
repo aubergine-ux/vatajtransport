@@ -34,7 +34,7 @@ The site works at both `vatajtransport.com` and `www.vatajtransport.com`. The pa
 - `index.html`: the page, plus its search, social-sharing and business-listing info
 - `styles.css`: all styles
 - `main.js`: quote form submission, earliest-date check, footer year
-- `img/`: logos (navy and white horizontal, white stacked, navy mark)
+- `img/`: logos (navy and white horizontal, navy and white stacked, navy mark)
 - `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`, `site.webmanifest`: browser and phone icons
 - `og-image.png`: preview image shown when the link is shared
 - `robots.txt`, `sitemap.xml`
