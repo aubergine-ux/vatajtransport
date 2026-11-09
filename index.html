@@ -106,7 +106,7 @@
 
       <!-- Car hauler drawing -->
       <div class="road">
-        <svg class="hauler" viewBox="0 96 890 119" role="img" aria-label="Drawing of a pickup truck towing a gooseneck trailer with two cars">
+        <svg class="hauler" viewBox="0 96 890 119" role="img" aria-label="Drawing of a Dodge Ram 3500 dually towing a gooseneck trailer with two cars">
           <!-- trailer tandem axles, toward the rear, tucked under the frame -->
           <g fill="#12223D">
             <circle cx="112" cy="192" r="16"/><circle cx="150" cy="192" r="16"/>
@@ -120,23 +120,32 @@
             <rect x="30" y="175" width="476" height="7"/>
             <path d="M490 166 L522 124 H658 V135 H529 L503 182 H490 Z"/>
             <rect x="642" y="133" width="10" height="11"/>
-            <!-- pickup -->
-            <path d="M590 140 H702 V122 Q702 112 712 112 H768 Q776 112 781 118 L806 146 L856 150 Q872 152 872 166 V186 H590 Z"/>
-            <rect x="584" y="172" width="10" height="10" rx="2"/>
-            <rect x="866" y="172" width="14" height="10" rx="2"/>
+            <!-- pickup: 1997 Ram 3500 dually, club cab -->
+            <path d="M584 138 H700 V116 Q700 108 708 108 H780 Q786 108 789 113 L808 140 L870 142 Q875 142 875 147 V152 L881 156 V180 H584 Z"/>
+            <rect x="578" y="170" width="10" height="11" rx="2"/>
+            <rect x="876" y="168" width="11" height="13" rx="2"/>
           </g>
           <g fill="#fff">
-            <rect x="700" y="140" width="3" height="40"/>
-            <path d="M712 120 H742 V144 H712 Z M750 120 H772 L794 144 H750 Z"/>
-            <rect x="860" y="156" width="9" height="6" rx="1"/>
+            <rect x="699" y="138" width="3" height="42"/>
+            <path d="M708 116 H723 V136 H708 Z M729 116 H778 Q781 116 783 119 L796 136 H729 Z"/>
+            <rect x="733" y="145" width="9" height="3" rx="1"/>
+            <rect x="876" y="162" width="4" height="7" rx="1"/>
           </g>
-          <!-- wheels -->
+          <!-- tow mirror -->
+          <rect x="784" y="121" width="7" height="14" rx="1.5" fill="#12223D"/>
+          <!-- hood sits above the dropped front fender; dually rear fender flare -->
+          <g fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round">
+            <path d="M812 150 Q852 150 872 160"/>
+            <path d="M600 180 Q601 147 636 145 Q671 147 672 180"/>
+          </g>
+          <!-- pickup wheels: deep-dish dually rear, front hub -->
           <g fill="#12223D" stroke="#fff" stroke-width="5">
-            <circle cx="632" cy="188" r="20"/><circle cx="826" cy="188" r="20"/>
+            <circle cx="636" cy="188" r="20"/><circle cx="830" cy="188" r="20"/>
           </g>
-          <g fill="#fff">
-            <circle cx="632" cy="188" r="7"/><circle cx="826" cy="188" r="7"/>
-          </g>
+          <circle cx="636" cy="188" r="11" fill="#fff"/>
+          <circle cx="636" cy="188" r="6" fill="#12223D"/>
+          <circle cx="830" cy="188" r="8" fill="#fff"/>
+          <circle cx="830" cy="188" r="3.5" fill="#12223D"/>
           <!-- cars -->
           <use href="#car" x="36" y="112" width="180" height="55"/>
           <use href="#car" x="252" y="112" width="180" height="55"/>
