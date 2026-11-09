@@ -12,10 +12,9 @@ Search `index.html` for `[` to find each one.
 |---|---|
 | `[NUMBER]` | USDOT number (shown on the door-lettering panel and in the footer) |
 | `[INSURANCE CARRIER]`, `[COVERAGE DETAILS]` | Insurer name and the coverage you want to advertise |
-| `[REVIEW TEXT]`, `[CUSTOMER NAME]`, `[REVIEW SOURCE]` | Real reviews only. Delete the reviews block until you have some |
-| `[PHOTO OF YOUR TRUCK…]` | Replace the dashed box with a real photo (see the comment above it) |
-| `[A FEW SENTENCES…]` | A short paragraph in your own words for the "Who you're dealing with" section |
 | `[FORMSPREE_FORM_ID]` | See below |
+
+When you have a photo of the truck, put it in `img/` and swap it in for the logo panel in the "Who you're dealing with" section (instructions are in a comment in `index.html`).
 
 ## Quote form (Formspree)
 
@@ -35,7 +34,7 @@ The site works at both `vatajtransport.com` and `www.vatajtransport.com`. The pa
 - `index.html`: the page, plus its search, social-sharing and business-listing info
 - `styles.css`: all styles
 - `main.js`: quote form submission, earliest-date check, footer year
-- `img/`: logos (navy horizontal, white horizontal, navy mark)
+- `img/`: logos (navy and white horizontal, white stacked, navy mark)
 - `favicon.svg`, `favicon.ico`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`, `site.webmanifest`: browser and phone icons
 - `og-image.png`: preview image shown when the link is shared
 - `robots.txt`, `sitemap.xml`
