@@ -19,6 +19,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 body { margin: 0; font-family: var(--font); font-size: 1.0625rem; line-height: 1.55; color: var(--navy); background: var(--white); }
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
