@@ -104,12 +104,9 @@ h2 { font-size: clamp(2rem, 6vw, 3rem); margin-bottom: 28px; }
 
 /* About */
 .about { padding: 72px 0; }
-.about-inner { display: grid; gap: 28px; align-items: center; }
 .about p { color: var(--ink-soft); max-width: 34em; }
 .about .sign { margin-top: 20px; color: var(--navy); font-weight: 700; }
 .about h2 { font-size: clamp(1.8rem, 5vw, 2.5rem); margin-bottom: 18px; }
-.photo-slot { display: grid; place-items: center; aspect-ratio: 4 / 3; background: var(--paper); border-radius: 3px; }
-.photo-slot img { width: 46%; }
 
 /* Trust: door lettering */
 .trust { padding: 72px 0; }
@@ -191,7 +188,6 @@ body:has(.callbar) { padding-bottom: calc(56px + env(safe-area-inset-bottom)); }
   .hero h1 { max-width: 14em; }
   .services, .how, .about, .trust { padding: 96px 0; }
   .how-list { grid-template-columns: repeat(3, 1fr); gap: 40px; }
-  .about-inner { grid-template-columns: 1fr 1.1fr; gap: 56px; }
   .quote-inner { grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: center; }
   .foot-inner { grid-template-columns: auto 1fr auto; align-items: center; gap: 40px; }
   .foot-phone { justify-self: center; }
