@@ -1,0 +1,13 @@
+{
+  // Static site served by Cloudflare Workers static assets. Deploy with: npx wrangler deploy
+  "name": "ferrislaketransport",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "ferrislaketransport.com", "custom_domain": true },
+    { "pattern": "www.ferrislaketransport.com", "custom_domain": true }
+  ]
+}
